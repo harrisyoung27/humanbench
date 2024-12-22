@@ -13,6 +13,7 @@ function greenBackground(){
     reaction.innerHTML = "Click now!!";
     if (milisecondTimer !== null) {
         clearInterval(milisecondTimer);
+        miliseconds = 0;
     }
     milisecondTimer = setInterval(miliSeconds, 1);
 }
@@ -48,7 +49,6 @@ reaction.addEventListener("mouseover", event => {
 })
 
 reaction.addEventListener("mouseout", event => {
-    miliseconds = 0;
     clearInterval(timer);
     clearInterval(milisecondTimer);
     reaction.style.background = "white";
