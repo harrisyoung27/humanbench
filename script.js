@@ -48,6 +48,7 @@ reaction.addEventListener("mouseover", event => {
 })
 
 reaction.addEventListener("mouseout", event => {
+    miliseconds = 0;
     clearInterval(timer);
     clearInterval(milisecondTimer);
     reaction.style.background = "white";
